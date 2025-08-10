@@ -1,0 +1,12 @@
+# Ignore the CSV file containing credentials
+passwords.csv
+
+# Ignore Python specific files
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Ignore IDE and editor folders
+.vscode/
+.idea/
