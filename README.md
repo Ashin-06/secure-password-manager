@@ -19,7 +19,7 @@ This is a simple, educational command-line password manager created in Python. T
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/Ashin-06/secure-password-manager.git](https://github.com/Ashin-06/secure-password-manager.git)
+    git clone https://github.com/Ashin-06/secure-password-manager.git
     cd secure-password-manager
     ```
 
