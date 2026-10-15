@@ -30,10 +30,15 @@ This is a simple, educational command-line password manager created in Python. T
     ```
 
 3.  **Run the Code:**
-    Open the `Day1.ipynb` notebook in a Jupyter environment or run the equivalent Python script to save and retrieve passwords.
+    Install Jupyter Notebook and open the notebook included in this repository:
+    ```bash
+    pip install notebook
+    jupyter notebook secpassmanager.ipynb
+    ```
+    Run the cells from top to bottom in one kernel session. No standalone Python script is included.
 
 ## ⚠️ Security Warning
 
-This is an educational project and should **NOT** be used to store real, sensitive passwords. The encryption key is generated and used within the same session, and the `passwords.csv` file is stored unencrypted on your disk.
+This is an educational project and should **NOT** be used to store real, sensitive passwords. The encryption key is generated in memory and is not saved. Restarting the kernel or rerunning the key-generation cell loses access to passwords encrypted with the previous key. The CSV contains encrypted password values, but service names, usernames, and password hashes remain visible. It is not a persistent password vault.
 
 **DO NOT** commit the `passwords.csv` file to GitHub. The provided `.gitignore` file is configured to prevent this.
